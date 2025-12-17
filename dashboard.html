@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Absensi XI SOSHUM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-bg">
+  <nav>
+    <span id="welcome"></span>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <main class="container">
+    <h2>Form Absensi</h2>
+
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+    
+    <select id="kehadiran">
+      <option value="">-- Status Kehadiran --</option>
+      <option value="Hadir">Hadir</option>
+      <option value="Izin">Izin</option>
+      <option value="Sakit">Sakit</option>
+      <option value="Alpa">Alpa</option>
+    </select>
+
+    <input type="date" id="tanggal">
+
+    <input type="file" id="foto" accept="image/*">
+
+    <button onclick="kirimAbsensi()">Kirim Absensi</button>
+
+    <h3>Riwayat Absensi</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Status</th>
+          <th>Tanggal</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody id="dataAbsensi"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
