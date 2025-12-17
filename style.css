@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-bg, .dash-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN */
+.login-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  animation: fade 1s ease;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background: #185a9d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* DASHBOARD */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 100px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  animation: fade 0.8s ease;
+}
+
+.container input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.container button {
+  padding: 10px;
+  background: #43cea2;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
